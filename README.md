@@ -30,12 +30,19 @@ npm install -g cnpm –registry=https://registry.npm.taobao.org
 
 输入vue
 
+![](https://candy5232.github.io/Vue-base/images/2.png)
+
 #4、搭建第一个vue项目
 打开终端 按下图操作 创建一个名为“my_jrojects”的项目
 
+![](https://candy5232.github.io/Vue-base/images/3.png)
+
 或者通过终端 cd my_jrojects 然后利用ls操作进行查看：
+
+![](https://candy5232.github.io/Vue-base/images/4.png)
 #5、运行
 在这里我们可以选用IDE运行或者直接用终端运行
+![](https://candy5232.github.io/Vue-base/images/5.png)
 
 （1）在终端运行
 
