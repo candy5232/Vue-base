@@ -11,6 +11,10 @@ Mac环境下搭建vue.js开发环境
 
 安装成功验证：
 
+https://candy5232.github.io/Vue-base/images/1.png
+
+
+
 #2、基于node.js,利用淘宝npm镜像安装相关依赖
 -----
 在cmd里直接输入：
