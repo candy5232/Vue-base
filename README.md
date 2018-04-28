@@ -38,6 +38,7 @@ npm install -g cnpm –registry=https://registry.npm.taobao.org
 ![](https://candy5232.github.io/Vue-base/images/3.png)
 
 验证，在Finder中打开我的电脑，找到名为“my_demo”的文件夹
+![](https://candy5232.github.io/Vue-base/images/6.png)
 
 或者通过终端 cd my_jrojects 然后利用ls操作进行查看：
 
@@ -48,9 +49,10 @@ npm install -g cnpm –registry=https://registry.npm.taobao.org
 
 （1）在终端运行
 
+![](https://candy5232.github.io/Vue-base/images/9.png)
 运行效果如下：
 
+![](https://candy5232.github.io/Vue-base/images/7.png)
 
-
-
+![](https://candy5232.github.io/Vue-base/images/8.png)
 
