@@ -11,7 +11,7 @@ Mac环境下搭建vue.js开发环境
 
 安装成功验证：
 
-https://candy5232.github.io/Vue-base/images/1.png
+![](https://candy5232.github.io/Vue-base/images/1.png)
 
 
 
