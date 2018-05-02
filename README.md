@@ -20,7 +20,7 @@ Mac环境下搭建vue.js开发环境
 -----
 在cmd里直接输入：
 
-npm install -g cnpm –registry=https://registry.npm.taobao.org
+npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 等待安装
 ![](https://candy5232.github.io/Vue-base/images/2.png)
