@@ -6,7 +6,7 @@ Vue.js作为目前最热门最具前景的前端框架之一，其提供了一�
 
 
 Vue.js简介
-
+![](https://candy5232.github.io/Vue-base/images/3.png)
 
 从上图的介绍中我们不难发现Vue.js是一款轻量级的以数据驱动的前端JS框架，其和jQuery最大的不同点在于jQuery通过操作DOM来改变页面的显示，而Vue通过操作数据来实现页面的更新与展示。下面便是Vue数据驱动的概念模型：
 
