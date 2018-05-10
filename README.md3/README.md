@@ -3,27 +3,23 @@
 Vue.js作为目前最热门最具前景的前端框架之一，其提供了一种帮助我们快速构建并开发前端项目的新的思维模式。本文主要介绍 vue.js的开发流程，不会涉及知识点的具体代码，点到为止。了解Vue.js的开发流程，并进一步理解如何通过Vue.js来构建一个中大型的前端项目，同时做好相应的部署与优化工作。
 
 
-
-
 Vue.js简介
+==
 ![](https://candy5232.github.io/Vue-base/images/Vue.js的开发流程1.jpg)
 
 从上图的介绍中我们不难发现Vue.js是一款轻量级的以数据驱动的前端JS框架，其和jQuery最大的不同点在于jQuery通过操作DOM来改变页面的显示，而Vue通过操作数据来实现页面的更新与展示。下面便是Vue数据驱动的概念模型：
 
-
+![](https://candy5232.github.io/Vue-base/images/Vue.js的开发流程2.jpg)
 
         
-
-
-
-
 Vue.js主要负责的是上图绿色正方体ViewModel的部分，其在View层（即DOM层）与Model层（即JS逻辑层）之间通过ViewModel绑定了DOM Listeners与Data Bingings两个相当于监听器的东西。
 
 当View层的视图发生改变时，Vue会通过DOM Listeners来监听并改变Model层的数据。相反，当Model层的数据发生改变时，其也会通过Data Bingings来监听并改变View层的展示。这样便实现了一个双向数据绑定的功能，也是Vue.js数据驱动的原理所在。
 
 Vue实例
-              
+==
 
+![](https://candy5232.github.io/Vue-base/images/Vue.js的开发流程3.jpg)
 
 
 在一个html文件中，我们直接可以通过script标签引入Vue.js，然后就可以在页面里写Vue.js代码了。上图中我们通过new Vue()构建了一个Vue的实例，在实例中，可以包含挂在元素（el），数据（data），模板（template），方法（methods）与生命周期钩子（created等）等选项。不同的实例选项拥有不同的功能，如：
@@ -33,7 +29,8 @@ Vue实例
 （3）created表示实例生命周期中创建完成的那一步，当实例已经创建完成之后将调用其方法。
 
 Vue常用指令
-       
+==
+ ![](https://candy5232.github.io/Vue-base/images/Vue.js的开发流程4.jpg)      
 
 在Vue项目的开发中，我们使用的最多的应该就属Vue的指令了。通过Vue提供的常用指令，我们可以淋漓尽致地发挥Vue数据驱动的强大功能。以下便是图中常用指令的简单介绍：
 
@@ -47,7 +44,8 @@ Vue常用指令
 关于更多的Vue指令可以查看Vue2.0文档，地址：https://vuefe.cn/api/#指令
 
 Vue.js技术栈
-
+==
+ ![](https://candy5232.github.io/Vue-base/images/Vue.js的开发流程5.jpg) 
       
 
 以上我们讲到可以直接在一个html页面里通过引入Vue.js来直接写Vue代码，但是这样的方式并不常用。因为如果我们的项目比较大，项目中会存在很多页面，一旦每个页面都引入一个Vue.js或者声明一个Vue实例，这样非常不利于后期的维护和代码的公用，也会存在实例名冲突的情况，所以我们需要用到Vue提供的技术栈来构建强大的前端项目。
@@ -65,17 +63,17 @@ Vue.js技术栈
 利用以上等技术，我们便可以开始构建我们的Vue项目了。
 
 构建大型应用
-
+==
+ ![](https://candy5232.github.io/Vue-base/images/Vue.js的开发流程6.jpg) 
         
-
 
 在构建我们的中大型Vue项目中，我们主要介绍如何利用vue-cli来自动生成我们项目的前端目录及文件，了解Vue中一切皆组件的概念及父子组件的通信问题，讲解在Vue项目中我们如何使用第三方插件，最后利用webpack来打包及部署我们的项目。
 
 
 
-
 vue-cli构建
-
+==
+ ![](https://candy5232.github.io/Vue-base/images/Vue.js的开发流程7.jpg) 
       
 
 在使用vue-cli之前我们需要安装node.js，利用其提供的npm命令来安装vue-cli。安装node.js只需去其官网下载软件并安装即可，地址为：https://nodejs.org/en/
@@ -91,20 +89,22 @@ vue-cli构建
 这样我们的一个基于webpack的vue项目目录就构建好了。
 
 单文件组件
-
+==
+ ![](https://candy5232.github.io/Vue-base/images/Vue.js的开发流程8.jpg) 
      
 
 在刚刚构建好的vue项目中，我们会发现一个App.vue和Hello.vue的文件，那么像这样的以.vue后缀结尾的文件便是我们Vue项目中常见的单文件组件。单文件组件包含了一个功能或模块的html、js及css。在.vue文件中，我们可以在template标签中写html，在script标签中写js，在style标签中写css。这样一个功能或模块就是一个.vue组件，对于组件公用和后期的维护也非常便捷。
 
 父子组件通信
-
+==
+ ![](https://candy5232.github.io/Vue-base/images/Vue.js的开发流程9.jpg) 
    
 
 父子组件通信
 那么像这样在以单文件组件为核心的项目开发中，我们一定会想到一个问题，就是.vue父子组件之间是如何交换数据来实现通信的呢？在Vue2.0中提供了props来实现父组件向子组件传递数据，通过$emit来实现子组件向父组件传递数据。当然如果是较为复杂和普遍的数据交互，建议大家使用vuex来同一管理数据。详情请见：https://vuefe.cn/guide/components.html#使用Props传递数据
 
 插件使用
-
+ ![](https://candy5232.github.io/Vue-base/images/Vue.js的开发流程10.jpg) 
      
 
 接下来我们介绍下在基于webpack的vue项目中我们是如何使用插件的，主要有两种情况：
@@ -122,7 +122,8 @@ vue-cli构建
 （2）import + components注册：此方式为Vue组件的使用方式，可以在一个组件中注册并使用一个子组件。
 
 部署及优化
-
+==
+ ![](https://candy5232.github.io/Vue-base/images/Vue.js的开发流程11.jpg) 
     
 
 当我们搞定整个Vue项目的前端编码阶段后，我们需要对我们的前端项目文件进行部署和优化工作，主要的几个方式如下：
