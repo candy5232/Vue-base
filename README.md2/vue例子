@@ -1,5 +1,6 @@
 
 Vue.js + vue-router 创建单页应用
+----
 
 
 用 Vue.js + vue-router 创建单页应用，是非常简单的。使用 Vue.js ，我们已经可以通过组合组件来组成应用程序，当你要把 vue-router 添加进来，
